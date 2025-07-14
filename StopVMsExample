@@ -3,9 +3,7 @@ Import-module 'az.compute'
 
 Connect-AzAccount -Identity
 
-# Variables
-# Set the tag for the VM's to start and stop and the tag value
-# VM's with matching tag and value, in the specified scope will start or stop
+
 $tag = "<Tag>"
 $tagVale = "<TagValue>"
 
