@@ -1,17 +1,6 @@
-
-
-# Import the modules
 Import-module 'az.accounts'
 Import-module 'az.compute'
 
-<# Connection example for run as account
-$connectionName = "AzureRunAsConnection"
-$servicePrincipalConnection = Get-AutomationConnection -name $connectionName
-Connect-AzureRmAccount -ServicePrincipal -TenantId $servicePrincipalConnection.TenantId -ApplicationId $servicePrincipalConnection.ApplicationId `
-    -CertificateThumbprint $servicePrincipalConnection.CertificateThumbprint 
-#>
-
-# Connect to Azure with the System Managed Identity
 Connect-AzAccount -Identity
 
 # Variables
