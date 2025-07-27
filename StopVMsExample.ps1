@@ -4,8 +4,8 @@ Import-module 'az.compute'
 Connect-AzAccount -Identity
 
 
-$tag = "<Tag>"
-$tagVale = "<TagValue>"
+$tag = "Environment"
+$tagVale = "Dev"
 
 # Function to stop the servers
 function Stop-Vms {
