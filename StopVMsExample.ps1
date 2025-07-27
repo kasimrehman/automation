@@ -5,7 +5,7 @@ Connect-AzAccount -Identity
 
 
 $tag = "Environment"
-$tagVale = "Prod"
+$tagValue = "Prod"
 
 # Function to stop the servers
 function Stop-Vms {
@@ -28,7 +28,7 @@ function Stop-Vms {
 
 # Get the servers
 try {
-    $vms = (get-azvm -ErrorAction Stop | Where-Object { $_.tags[$tag] -eq $tagVale })
+    $vms = (get-azvm -ErrorAction Stop | Where-Object { $_.tags[$tag] -eq $tagValue })
 }
 catch {
     $ErrorMessage = $_.Exception.message
