@@ -5,7 +5,7 @@ Connect-AzAccount -Identity
 
 
 $tag = "Environment"
-$tagValue = "Prod"
+$tagValue = "Dev"
 
 # Function to stop the servers
 function Stop-Vms {
